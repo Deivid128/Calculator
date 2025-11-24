@@ -9,6 +9,7 @@ function appendToDisplay(calcValue, showValue) {
         toCalcValue += calcValue;  
         display.value += showValue;
     } else {
+        toCalcValue += calcValue;  
         display.value = toCalcValue;
         haveResult = false;
     }
