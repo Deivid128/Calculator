@@ -6,13 +6,12 @@ var haveResult = false;
 
 function appendToDisplay(calcValue, showValue) {
     if (!haveResult) {
-        console.log(toCalcValue);
-        
         toCalcValue += calcValue;  
         display.value += showValue;
-    } else {
         console.log(toCalcValue);
+    } else {
         toCalcValue += calcValue;  
+        console.log(toCalcValue);
         display.value = toCalcValue;
         haveResult = false;
     }
